@@ -1,10 +1,11 @@
-function twoSum(nums,target){
-    let map = {};
-    for(let i=0;i<nums.length;i++){
-        if(map[nums[i]]>=0){
-              return(comp[nums[i]],i)
+var twoSum = function(nums,target){
+    var map = {};
+    for(var i=0;i<nums.length;i++){
+        var m = target-nums[i];
+        if(map[m] !==undefined){
+            return [map[m],i];
         }
-        map[target-nums[i]]=i
+        map[nums[i]]=i;
     }
-    return []
 }
+console.log(twoSum([2,5,5,11] , 10));s
