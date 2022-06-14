@@ -1,16 +1,13 @@
-function arrayi(ar1 ,ar2){
-    let obj={};
-     for(let i =0;i<ar1.length;i++){
-         obj[ar1[i]] ? obj[ar1[i]]++ : obj[ar1[i]]=1;
-     }
-     let res = [];
-     for(item of ar2){
-         if(obj[item]>0){
-             res.push(item);
-             obj[item]--;
-         }
-     }
-     return res
+function inter(ar1,ar2){
+    let obj1={};
+    let res=[];
+   for(let i=0;i<ar1.length;i++){
+    obj1[ar1[i]]? obj1[ar1[i]]++: obj1[ar1[i]]++;
+   }
+    for(let i=0;i<ar2.length;i++){
+        if(obj1[ar2[i]]){
+            res.push(ar2[i]);
+            obj1[ar2[i]]--;
+        }
+    }
 }
-
-console.log(arrayi([1,2,3,3,4,],[1,2,3,3]))
