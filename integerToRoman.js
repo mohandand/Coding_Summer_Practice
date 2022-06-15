@@ -15,48 +15,37 @@
  // constraints :  int will be positive, in range from 1 to 3999
 
 
- // Step 1
- const table = {
-    '1000': 'M',
-    '900': 'CM',
-    '500': 'D',
-    '400': 'CD',
-    '100': 'C',
-    '90': 'XC',
-    '50': 'L',
-    '40': 'XL',
-    '10': 'X',
-    '9': 'IX',
-    '5': 'V',
-    '4': 'IV',
-    '1': 'I'
-  }
-  
-  /**
-   * @param {number} int
-   * @return {string}
-   */
-  function intToRoman(int){
-    let result = '' // roman numbers must be represented as string
-    // step 2
-    let nums =  Object.keys(table).sort((a,b)=>b-a)
-  
-    //step 3
-    for(let i=0; i<nums.length; i++){
-      let num = nums[i]
-  
-      // step 4
-      while(num <= int) {
-        int -= num
-        result+= table[num]
-      }
-  
-      // step 5
-      if(num <=0) break
+ var intToRoman = function(num) {
+    const table = {
+        '1000':'M',
+        '900':'CM',
+        '500':'D',
+        '400':'CD',
+        '100':'C',
+        '90':'XC',
+        '50': 'L',
+        '40': 'XL',
+        '10': 'X',
+        '9': 'IX',
+        '5': 'V',
+        '4': 'IV',
+        '1': 'I'    
+    } 
+    
+    let res=""
+    
+    let nums = Object.keys(table).sort((a,b) => b-a)
+    
+    for(let i=0;i<nums.length;i++){
+        let key = nums[i];
+        
+        while(key<=num){
+            num = num-key;
+            res = res + table[key]
+        }
+        
+        if(num<=0) break;
     }
-  
-    // step 6
-    return result
-  }
-
-  console.log(intToRoman(123))
+    
+       return res
+   };
