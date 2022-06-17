@@ -6,12 +6,12 @@ class LRUCache {
     }
   
     get(key) {
-      if (!this.cache.has(key)) return -1;
+      if (!this.cache.has(key)) return -1; //if  key is not there it return -1
   
-      const v = this.cache.get(key);
-      this.cache.delete(key);
-      this.cache.set(key, v);
-      return this.cache.get(key);
+      const v = this.cache.get(key);   //storing value 
+      this.cache.delete(key); //deleting key
+      this.cache.set(key, v);  //adding key
+      return this.cache.get(key);  //return new key
     };
   
     put(key, value) {
