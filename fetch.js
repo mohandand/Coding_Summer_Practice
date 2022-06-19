@@ -26,3 +26,13 @@ fetch('http://myprofile/data',{
 .catch((err)=>{
     console.log(err)
 })
+
+// if you use same in  async functions then
+
+//get
+
+async function fetchText(){
+    let response = await fetch('url')
+    let data = await response.json();
+    console.log(data)
+}
