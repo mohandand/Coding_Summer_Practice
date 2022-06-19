@@ -31,8 +31,11 @@ fetch('http://myprofile/data',{
 
 //get
 
-async function fetchText(){
+async function fetchJSON(){
     let response = await fetch('url')
     let data = await response.json();
     console.log(data)
 }
+
+
+//post also same like above we can write
