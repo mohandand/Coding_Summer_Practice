@@ -15,3 +15,5 @@ function maxRob(arr){
     return curmax
 
 }
+
+console.log(maxRob([2,7,9,3,1]))
