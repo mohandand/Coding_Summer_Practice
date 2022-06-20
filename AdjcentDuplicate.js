@@ -17,6 +17,7 @@ function removeDuplicates(s,k){
     for(let [char,count] of stack){
         res=res+char.repeat(count);
     }
+    return res
 }
 
 console.log(removeDuplicates("deeedbbcccbdaa",3))
