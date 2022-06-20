@@ -8,8 +8,9 @@ function maxRob(arr){
     let curmax;
     for(let i=2;i<arr.length;i++){
         curmax = Math.max(maxatone+arr[i] , maxattwo);
-        maxattwo = curmax;
         maxatone = maxattwo;
+        maxattwo = curmax;
+        
     }
 
     return maxattwo
