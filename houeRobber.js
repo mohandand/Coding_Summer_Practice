@@ -5,15 +5,14 @@ function maxRob(arr){
 
     let maxatone = arr[0];
     let maxattwo = arr[1];
-    
+    let curmax;
     for(let i=2;i<arr.length;i++){
-        let curmax = Math.max(maxatone+arr[i] , maxattwo);
+        curmax = Math.max(maxatone+arr[i] , maxattwo);
         maxattwo = curmax;
         maxatone = maxattwo;
     }
 
-    return curmax
-
+    return maxattwo
 }
 
 console.log(maxRob([2,7,9,3,1]))
