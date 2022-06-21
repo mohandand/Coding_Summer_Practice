@@ -20,4 +20,4 @@ function removeDuplicates(s,k){
     return res
 }
 
-console.log(removeDuplicates("deeedbbcccbdaa",3))
+console.log(removeDuplicates("deeedbbcccbaaada",3))
