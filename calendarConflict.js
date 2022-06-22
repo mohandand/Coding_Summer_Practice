@@ -9,4 +9,4 @@ function isCalendarHasConfict(s1,e1,s2,e2){
     return false; //No over lap
 }
 
-/* I just wrote th Psuedo code . let me know if you want me to write code for comaring given times as wells */
+/* I just wrote th Psuedo code . let me know if you want me to write code for comparing given times as wells */
