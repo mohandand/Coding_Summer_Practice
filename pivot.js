@@ -1,12 +1,13 @@
-function Pivot(array){
-    let sum = array.reduce((p,c) => p+c,0)
-    let leftsum = 0;
-    for(let i=0;i<array.length;i++){
-        let rightsum  = sum-left-array[i];
-        if(rightsum==leftsum){
-            return i
+//Question:https://leetcode.com/problems/find-pivot-index/
+var pivotIndex = function(arr) {
+    const sum = arr.reduce((r, n) => r + n, 0);
+    let left = 0;
+    for (let i = 0; i < arr.length; i++) {
+        const right = sum - left - arr[i];
+        if (left === right) {
+            return i;
         }
-        leftsum = leftsum+array[i]
+        left += arr[i];
     }
-}
-console.log(Pivot([1,2,3,2,2,2]))
+    return -1;
+};
