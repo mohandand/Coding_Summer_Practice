@@ -1,11 +1,9 @@
 var isSubsequence = function(s, t) {
-    let str = s.split('')
-    let tar = t.split('')
     let count=0;
     let res=""
-    for(let i=0;i<tar.length;i++){
-        if(str[count] == tar[i]){
-            res=res+str[count];
+    for(let i=0;i<t.length;i++){
+        if(s[count] == t[i]){
+            res=res+s[count];
             count++
         }
     }
@@ -13,4 +11,4 @@ var isSubsequence = function(s, t) {
     return res==s;
 };
 
-console.log(isSubsequence("abc","adbecf"));
+console.log(isSubsequence("abc","adbef"));
