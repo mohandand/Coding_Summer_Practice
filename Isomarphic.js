@@ -1,3 +1,18 @@
+/* 
+Example 1:
+
+Input: s = "egg", t = "add"
+Output: true
+Example 2:
+
+Input: s = "foo", t = "bar"
+Output: false
+Example 3:
+
+Input: s = "paper", t = "title"
+Output: true
+ */
+
 var isIsomorphic = function(s, t) {
     let obj1={};
     let obj2={};
