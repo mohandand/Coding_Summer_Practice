@@ -4,7 +4,8 @@ function alphaPos(str){
     str.replace(/^[a-zA-Z]/).toLowerCase();
     let res=[];
     for( let char of str){
-        res.push(indexOf(char) + 1);
+        res.push(str.indexOf(char) + 1);
     }
+    return res;
 }
-console.log(alphaPos("abcde"))
+console.log(alphaPos("bf"))
