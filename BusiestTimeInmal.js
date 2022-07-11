@@ -3,7 +3,8 @@ function BusiestTime(data){
     let maxcount = 0;
     let maxPeriod=0;
     for(let i=0;i<=data.length;i++){
-        let e = data[i][2];
+        console.log(data[i][2])
+        let e = data[i][1];
         if(e === 1){
             count += data[i][1]
         }else{
