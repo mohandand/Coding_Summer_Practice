@@ -1,7 +1,7 @@
 function alphaPos(str){
     let alpha = "abcdefghijklmnopqrstuvwxyz"
-    alpha.split('');
+    let alphaa = alpha.split('');
     str.toLowerCase().replace(/[^a-z]/g ,'');
-    console.log(alpha,str);
+    console.log(alphaa,str);
 }
 console.log(alphaPos("bff$ss"));
