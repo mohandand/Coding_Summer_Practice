@@ -10,3 +10,4 @@ function revInt(num){
 
     return res;
 }
+console.log(revInt(12));
