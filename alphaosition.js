@@ -9,4 +9,4 @@ function alphaPos(str){
     }
     return res;
 }
-console.log(alphaPos("bff$"));
+console.log(alphaPos("bff$ss"));
