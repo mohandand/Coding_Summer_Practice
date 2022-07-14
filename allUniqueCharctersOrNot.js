@@ -3,9 +3,10 @@ function allUniqChar(str){
   for(let char of str){
     obj[char] ? obj[char]++ :obj[char] =1;
   }
+
    let val = Object.values(obj);
-   
-   return val.every(num => num>1);
+   console.log(val)
+   return val.every(num => num==1);
      
 }
-console.log(allUniqChar("abc235"))
+console.log(allUniqChar("abc2355"))
