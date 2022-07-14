@@ -6,7 +6,6 @@ function parMatch(s){
     }
 
     let stack = [];
-
     for(let char of s){
         if(char === '(' || char ==='{' ||char==='['){
             stack.push(char)
@@ -22,3 +21,5 @@ function parMatch(s){
         return true;
     }
 }
+
+console.log(parMatch('(){}[]([]'));
