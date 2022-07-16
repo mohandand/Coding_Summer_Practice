@@ -18,6 +18,5 @@ function findArrayQuadruplet(arr, s) {
       }
     }  
     return [];
-    
   }
-console.log(findArrayQuadruplet([4,4,4,4],16))  
+console.log(findArrayQuadruplet([4,4,4,4],14))  
