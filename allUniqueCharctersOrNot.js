@@ -10,3 +10,4 @@ function allUniqChar(str){
      
 }
 console.log(allUniqChar("abc2355"))
+
