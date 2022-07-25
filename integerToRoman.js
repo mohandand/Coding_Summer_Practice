@@ -38,12 +38,12 @@
     
     for(let i=0;i<nums.length;i++){
         let key = nums[i];
-        
+        console.log(key)
         while(key<=num){
             num = num-key;
             res = res + table[key]
         }
-        
+        console.log(res)
         if(num<=0) break;
     }
     
