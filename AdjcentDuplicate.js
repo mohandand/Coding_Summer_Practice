@@ -1,5 +1,4 @@
 /* 
-
 [charcterName, count]-> this we will push to stack for first time and increse count each time whenever we see same charcter.
 
 ->Take stack and check if current element is equal to top of the stack then increase count and check weather 
@@ -7,8 +6,6 @@ that count equals to given k then remove from stack.
 Otherwise push [charcterName, 1] 
 
 ->Finally cancatenate them
-
-
 */
 
 function removeAdjacentDuplicates(str,k){
