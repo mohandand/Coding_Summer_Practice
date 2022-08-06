@@ -1,10 +1,14 @@
+/* 
+ */
+
+
 function maxAreaa(arry){
-    let maxArea = 1;
+    let maxArea = 0;
     let start = 0
     let end = arry.length-1;
     while(start<end){
-        let max = Math.max(arry[start],arry[end]);
-        let area = max*max;
+        let min = Math.min(arry[start],arry[end]);
+        let area = [end-start]*min;
 
         if(area>maxArea){
             maxArea = area
