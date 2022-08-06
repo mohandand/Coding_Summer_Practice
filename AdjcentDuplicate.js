@@ -1,23 +1,33 @@
-function removeDuplicates(s,k){
-    let stack=[];
-    for(let i=0;i<s.length;i++){
-        let current=s[i];
-        let peak = stack[stack.length-1]
-        if(stack.length===0|| peak[0] !==current){
-            stack.push([current,1])
+/* 
+
+[charcterName, count]-> this we will push to stack for first time and increse count each time whenever we see same charcter.
+
+->Take stack and check if current element is equal to top of the stack then increase count and check weather 
+that count equals to given k then remove from stack.
+Otherwise push [charcterName, 1] 
+
+->Finally cancatenate them
+
+
+*/
+
+function removeAdjacentDuplicates(str,k){
+    let stack =[];
+    let res = "";
+    for(let i = 0;i<str.length;i++){
+        let peak = stack[stack.length-1];
+        if(stack.length == 0 || str[i] !== peak[0]){
+            stack.push([str[i],1]);
         }else{
-            peak[1]++;
-            if(peak[1]===k){
+            peak[1]++
+            if(peak[1] == k){
                 stack.pop();
             }
-        }
+        }   
     }
-    let res="";
-
-    for(let [char,count] of stack){
-        res=res+char.repeat(count);
+    for(let [char ,count] of stack){
+        res = res + char.repeat(count);
     }
-    return res
+    return res;
 }
-
-console.log(removeDuplicates("deeedbbcccbaaada",3))
+console.log(removeAdjacentDuplicates("abbacd",2))
