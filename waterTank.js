@@ -1,4 +1,9 @@
 /* 
+Two pointer Approch:
+->Take start and end pointers find minimum of the two that become length 
+and right-left becomes width 
+->Intially take area = 0 and compare new area and replace if u get more area
+-> move the start or end pointer based on whichever is lesser until start<end
  */
 
 
