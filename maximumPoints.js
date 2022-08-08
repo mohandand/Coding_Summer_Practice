@@ -28,6 +28,5 @@ function maxPoints(array,k){
     }
  return maxScore;
 }
-
 console.log(maxPoints([9,7,7,9,7,7,9],7))
 
