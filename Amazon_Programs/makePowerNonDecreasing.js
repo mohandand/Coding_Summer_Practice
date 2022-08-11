@@ -12,7 +12,7 @@ function makePowerNonDecreasing(power) {
             continue;
         }else{
             if(power[i-1]+currentSum<=power[i]+currentSum){
-                continue
+                continue;
             }else{
                 currentSum+=power[i-1]-power[i]
                 totalSum+=power[i-1]-power[i]
@@ -21,4 +21,6 @@ function makePowerNonDecreasing(power) {
     }
   return totalSum
   }
+console.log(makePowerNonDecreasing([1,3,2,6,4]))
+
   
