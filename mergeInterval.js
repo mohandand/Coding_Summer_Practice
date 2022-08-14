@@ -1,3 +1,11 @@
+/* 
+main logic is comapring below 
+if overlas merge it other wise push inteval
+Ex:1 [1,2] [1,4]  2>=1  so change end point to [1,4]
+Ex:2 [1,3],[2,6]   3>=2 so change end point to [1,6]
+
+*/
+
 function mergeInterval(intervals){
     intervals.sort((a,b) => a[0]-b[0])
 
