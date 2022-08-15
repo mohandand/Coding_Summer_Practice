@@ -19,3 +19,5 @@ function moveZeros(array){
     }
     return array
 }
+
+console.log(moveZeros([1,0,2,0]))
