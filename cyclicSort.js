@@ -11,4 +11,4 @@ function CyclicSort(array){
     return array
 }
 
-console.log(CyclicSort([2,1,3,4,5]))
+console.log(CyclicSort([2,1,4,6,3,5]))
